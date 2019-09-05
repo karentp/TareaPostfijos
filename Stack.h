@@ -26,7 +26,7 @@ struct Stack{
     }
     bool isEmpty();
     Node* pop();
-    void push();
+    void push(int);
     Node* peek();
 
 };

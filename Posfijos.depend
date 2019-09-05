@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1567660834 source:c:\users\karen tp\documents\tec\2019\ii_semestre\estructuradedatos\tareapostfijos\posfijos\stack.cpp
+	<cstdlib>
+	<iostream>
+	"Stack.h"
+
+1567660681 c:\users\karen tp\documents\tec\2019\ii_semestre\estructuradedatos\tareapostfijos\posfijos\stack.h
+	<cstdlib>
+	<iostream>
+
