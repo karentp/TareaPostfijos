@@ -25,7 +25,7 @@ Node* Stack::peek(){
 
 //insertar al inicio
 
-void Stack::push(int data){
+void Stack::push(char data){
 
     if(isEmpty()) top= new Node(data);
     else{
@@ -33,4 +33,23 @@ void Stack::push(int data){
         newTop->next = top;
         top = newTop;
     }
+}
+
+void Stack::pushInt(double data){
+
+    if(topInt==nullptr) topInt= new NodeInt(data);
+    else{
+        NodeInt * newTop = new NodeInt(data);
+        newTop->next = topInt;
+        topInt = newTop;
+    }
+}
+
+NodeInt* Stack::popInt(){
+    NodeInt * deleted= topInt;
+    if(topInt!=nullptr){
+        topInt=topInt->next;
+        deleted->next= nullptr;
+    }
+    return deleted;
 }

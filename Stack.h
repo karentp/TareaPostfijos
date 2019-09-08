@@ -9,9 +9,18 @@ using namespace std;
 //Estructura del Nodo para la pila
 
 struct Node {
-       int data;
+       char data;
        Node* next;// puntero para enlazar nodos
-       Node(int d) {
+       Node(char d) {
+         data = d;
+         next = nullptr;
+       }
+};
+
+struct NodeInt {
+       double data;
+       NodeInt* next;// puntero para enlazar nodos
+       NodeInt(double d){
          data = d;
          next = nullptr;
        }
@@ -21,12 +30,16 @@ struct Node {
 
 struct Stack{
     Node *top;
+    NodeInt *topInt;
     Stack(){
         top = nullptr;
+        topInt= nullptr;
     }
     bool isEmpty();
     Node* pop();
-    void push(int);
+    NodeInt* popInt();
+    void push(char);
+    void pushInt(double);
     Node* peek();
 
 };
